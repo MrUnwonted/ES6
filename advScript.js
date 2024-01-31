@@ -61,3 +61,100 @@
 // fruits.forEach((item,index) => {
 //     console.log(`I like ${item}`);
 // })
+
+// const globalPlayer = [{
+//         id:0,
+//         names:'Master Splinter',
+//         age:20
+//     },
+//     {
+//         id:1,
+//         names:'Master Restner',
+//         age:22
+//     },
+//     {
+//         id:3,
+//         names:'Master Santner',
+//         age:25
+//     },
+// ]
+
+// for(let i =0; i<globalPlayer.length;i++){
+//     console.log(globalPlayer[i])
+// }
+
+// globalPlayer.forEach((value) => console.log(value.names))
+
+// MAP
+// const globalPlayer = [{
+//     id:0,
+//     names:'Master Splinter',
+//     age:20
+// },
+// {
+//     id:1,
+//     names:'Master Restner',
+//     age:22
+// },
+// {
+//     id:3,
+//     names:'Master Santner',
+//     age:25
+// },
+// ]
+// const newArray =  globalPlayer.map(value => 
+//     value.names +',' + 'age:' + value.age)
+// console.log(newArray);
+
+// Filter
+// const globalPlayer = [{
+//     id:0,
+//     names:'Master Splinter',
+//     age:20
+// },
+// {
+//     id:1,
+//     names:'Master Restner',
+//     age:22
+// },
+// {
+//     id:3,
+//     names:'Master Santner',
+//     age:25
+// },
+// ]
+
+// const newArray = globalPlayer.filter((value) =>
+//  value.age ===20 && value.names ==='Master Splinter'
+//  )
+// console.log(newArray);
+
+// Reduce
+// const numberArray = [12,23,35,35,56,5]
+// // let total =0
+
+// const newArray = 
+//     numberArray.reduce((total,value) => total+value,10)
+//     console.log(newArray)
+
+
+// Find
+const globalPlayer = [{
+        id:0,
+        names:'Master Splinter',
+        age:20
+    },
+    {
+        id:1,
+        names:'Master Restner',
+        age:22
+    },
+    {
+        id:3,
+        names:'Master Santner',
+        age:25
+    },
+    ]
+
+    const newObj = globalPlayer.find((value) => value.names === 'Master Splinter')
+    console.log(newObj);
